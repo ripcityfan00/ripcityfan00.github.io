@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #fff9f5;
+  color: #4b2e2e;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.page {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.page img {
+  max-width: 80%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cover, .closing {
+  background: #fff0f6;
+}
+
+.page p {
+  max-width: 60ch;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
