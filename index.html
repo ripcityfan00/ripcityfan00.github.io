@@ -7,29 +7,68 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="scrapbook-wrapper">
+    <button class="nav-button left" onclick="scrollAlbum(-1)">←</button>
 
-  <section class="page cover">
-    <h1>Happy Birthday, Mom!</h1>
-    <p>Here’s a little walk through some of our most special memories together 💖</p>
-  </section>
+    <div class="album" id="album">
+      <!-- 📘 Cover Page -->
+      <section class="page cover">
+        <h1>Happy Birthday, Nanay!</h1>
+        <img src="images/cover.jpg" alt="Nanay" />
+        <p>A little journey through our memories 💖</p>
+      </section>
 
-  <section class="page">
-    <img src="images/photo1.jpg" alt="Mom and me" />
-    <p>Our first adventure together. I probably cried, but you smiled through it.</p>
-  </section>
+      <!-- 📸 Photo Page 2 -->
+      <section class="page">
+        <img src="images/image2.jpg" alt="Mad" />
+        <p>Our first argument. I let you win.</p>
+      </section>
 
-  <section class="page">
-    <img src="images/photo2.jpg" alt="Family trip" />
-    <p>All those road trips and giggles in the car...</p>
-  </section>
+      <!-- 📸 Photo Page 1 -->
+      <section class="page">
+        <p>You’ve always been fearless, even when the catch is bigger than expected.</p>
+        <img src="images/image1.jpg" alt="Fish" />
+      </section>
 
-  <!-- More sections here -->
+      <!-- 📸 Photo Page 3 -->
+      <section class="page">
+        <img src="images/image3.jpg" alt="Roses" />
+        <p>You didn't wait for life to bloom, you planted and nurtured it yourself.</p>
+      </section>
 
-  <section class="page closing">
-    <h2>Thank You for Everything</h2>
-    <p>I love you more than words can ever say. Happy Birthday 💐</p>
-  </section>
+      <!-- 📸 Photo Page 4 -->
+      <section class="page">
+        <p>Life may throw grit your way, but with patience and diligence, you become a pearl.</p>
+        <img src="images/image4.jpg" alt="Oyster" />
+      </section>
+
+      <!-- 📸 Photo Page 5 -->
+      <section class="page">
+        <img src="images/image5.jpg" alt="Dog" />
+        <p>Through your bonds, you show love, loyalty, and strength every day.</p>
+      </section>
+
+      <!-- 📸 Photo Page 6 -->
+      <section class="page">
+        <p>Your resilience is the ability to keep moving forward, no matter the weather.</p>
+        <img src="images/image6.jpg" alt="Snow" />
+      </section>
+
+      <!-- 🎀 Closing Page -->
+      <section class="page closing">
+        <h2>I Love You Forever! Happy Birthday!</h2>
+        <img src="images/image7.jpg" alt="IceCream" />
+        <p>Thank you for your love, guidance, and everything in between. Love, Neal</p>
+      </section>
+    </div>
+
+    <button class="nav-button right" onclick="scrollAlbum(1)">→</button>
+    <button id="restartBtn" class="nav-button" onclick="restartAlbum()">⟲</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
+
+
+
 </html>
